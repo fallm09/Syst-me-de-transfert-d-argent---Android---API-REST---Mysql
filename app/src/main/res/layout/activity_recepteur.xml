@@ -6,49 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".RecepteurActivity">
 
+
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="316dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="19dp"
+        android:accessibilityLiveRegion="polite"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nom"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="129dp" />
+        android:singleLine="false"
+        android:textAlignment="viewStart"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.336" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recepteur"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:textAlignment="center"
+        android:textColor="#0B0A0A"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="309dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="52dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Prenom"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="236dp" />
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="362dp" />
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
 
     <EditText
         android:id="@+id/editTextNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="319dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="86dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="471dp" />
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="217dp"
+        android:layout_height="54dp"
+        android:text="envoyer"
+        android:textColorHint="#2B090E"
+        app:iconTint="#8C0F0F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

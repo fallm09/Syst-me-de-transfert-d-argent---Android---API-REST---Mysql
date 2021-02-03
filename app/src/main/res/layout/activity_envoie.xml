@@ -6,47 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".EnvoieActivity">
 
+
     <Button
         android:id="@+id/button_envoie"
-        android:layout_width="137dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="177dp"
+        android:layout_width="237dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="120dp"
         android:text="Envoie"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        app:layout_constraintTop_toTopOf="@+id/editTextDate"
+        app:layout_constraintVertical_bias="1.0" />
 
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="243dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="102dp"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
-
-    <EditText
-        android:id="@+id/editTextNumber2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="118dp"
-        android:layout_marginBottom="119dp"
-        android:ems="10"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
-        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
-        app:layout_constraintStart_toStartOf="@+id/editTextDate"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    <Button
+        android:id="@+id/button_envoi"
+        android:layout_width="237dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="120dp"
+        android:text="Envoi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate"
+        app:layout_constraintVertical_bias="1.0" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="291dp"
+        android:layout_height="98dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="54dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="275dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="264dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
