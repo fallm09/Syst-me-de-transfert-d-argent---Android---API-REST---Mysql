@@ -7,11 +7,23 @@
     tools:context=".EnvoieActivity">
 
 
+<!--    <Button-->
+<!--        android:id="@+id/button_envoie"-->
+<!--        android:layout_width="171dp"-->
+<!--        android:layout_height="63dp"-->
+<!--        android:layout_marginStart="36dp"-->
+<!--        android:layout_marginBottom="120dp"-->
+<!--        android:text="redirectipn"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/editTextDate"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
     <Button
-        android:id="@+id/button_envoie"
-        android:layout_width="237dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="72dp"
+        android:id="@+id/button_envoie1"
+        android:layout_width="171dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="120dp"
         android:layout_marginBottom="120dp"
         android:text="Envoie"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,17 +31,6 @@
         app:layout_constraintTop_toTopOf="@+id/editTextDate"
         app:layout_constraintVertical_bias="1.0" />
 
-    <Button
-        android:id="@+id/button_envoi"
-        android:layout_width="237dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="120dp"
-        android:text="Envoi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextDate"
-        app:layout_constraintVertical_bias="1.0" />
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
